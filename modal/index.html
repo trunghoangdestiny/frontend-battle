@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../fontawesome-free-6.2.0-web/css/all.css">
+</head>
+
+<body>
+  <button class="open_modal_btn" id="open_modal_btn" onclick="openModal()">Open modal</button>
+  <div class="modal" id="modal">
+    <div class="modal_inner" id="modal_inner">
+      <div class="modal_header">
+        <p>Modal learning battle</p>
+        <i class="fa-solid fa-xmark" onclick="closeModal()"></i>
+      </div>
+      <div class="modal_body">
+        <p>This is body of modal. <br>
+          The alignment is done after the lengths and auto
+          margins are applied, meaning that, if in a Flexbox
+          layout there is at least one flexible element, with
+          flex-grow different from 0, it will have no effect
+          as there won't be any available space.
+        </p>
+      </div>
+      <div class="modal_footer">
+        <button class="close_modal_btn" id="close_modal_btn" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
